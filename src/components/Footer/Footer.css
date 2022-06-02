@@ -1,28 +1,25 @@
-.footer {
+.footer-basic {
+  background-color: rgba(128, 128, 128, 0.068);
+  padding: 20px 0;
+  width: 100vw;
   display: flex;
+  color: black;
+  justify-content: space-around;
   align-items: center;
-  margin: -0.5rem -3.5rem;
-  position: relative;
-  margin-top: -7rem;
-}
-.f-content {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 4rem;
-  gap: 4rem;
-  color: white;
-}
-.f-icons {
-  display: flex;
-  gap: 2rem;
+
 }
 
-@media screen and (max-width: 480px){
-  .f-content{
-    transform: scale(.5);
-  }
+.footer-basic strong {
+  color: var(--orange);
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.4rem;
 }

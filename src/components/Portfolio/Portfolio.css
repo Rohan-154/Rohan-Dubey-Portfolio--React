@@ -4,16 +4,17 @@
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin-top: 3rem;
 
 }
 /* heading */
-.portfolio span:nth-of-type(1) {
+.myWork {
   color: var(--black);
   font-size: 2rem;
   font-weight: bold;
 }
 
-.portfolio span:nth-of-type(2) {
+.projects {
   color: var(--orange);
   font-size: 2.5rem;
   font-weight: bold;
@@ -36,5 +37,28 @@
   width: 19rem;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border-radius: 19px;
+}
+.tags{
+  font-size: 14px;
+  font-weight: bold;
+  background-color: lightgray;
+  padding: 0.6rem 0.3rem;
+  border-radius: 0.8rem;
+}
+.tags-div{
+  line-height: 0.7rem;
+  display: flex;
+  gap: 0.7rem;
+}
+.sample-project{
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.flex-project{
+  display: flex;
+  flex-direction: column;
 }
 

@@ -7,15 +7,20 @@ import Gitub from "@iconscout/react-unicons/icons/uil-github";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <img src={Wave} alt="" style={{ width: "100%" }} />
-      <div className="f-content">
-        <span>Zainkeepscode@gmail.com</span>
-        <div className="f-icons">
-          <Insta color="white" size={"3rem"} />
-          <Facebook color="white" size={"3rem"} />
-          <Gitub color="white" size={"3rem"} />
-        </div>
+    <div class="footer-basic">
+      <p class="signature">
+        Built with <strong>ReactJS</strong> and <strong> Vanilla CSS</strong>
+      </p>
+      <div class="social">
+        <a href="https://github.com/Rohan-154/Villainess-E-Commerce">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a href="https://twitter.com/Rohan_415?s=09">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rohan-dubey-2854b9201/">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
       </div>
     </div>
   );

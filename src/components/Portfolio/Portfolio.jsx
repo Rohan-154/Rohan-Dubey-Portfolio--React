@@ -1,41 +1,72 @@
 import React, { useContext } from "react";
 import "./Portfolio.css";
-import { Swiper, SwiperSlide } from "swiper/react"
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import CL from "../../img/CL.png";
+import ecom from "../../img/ecom.png";
+import vid from "../../img/vid.png";
+import pomodoro from "../../img/pomodoro.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
     <div className="portfolio" id="portfolio">
-      {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
-      <span>Portfolio</span>
+      <span style={{ color: darkMode ? "white" : "" }} className="myWork">
+        My Work
+      </span>
+      <span className="projects">Recent Projects</span>
 
-      {/* slider */}
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        grabCursor={true}
-        className="portfolio-slider"
-      >
-        <SwiperSlide>
-          <img src={Sidebar} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Ecommerce} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={MusicApp} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={HOC} alt="" />
-        </SwiperSlide>
-      </Swiper>
+      <div className="sample-project">
+        <div className="flex-project">
+          <img src={CL} alt="" />
+          <div className="flex-display">
+            <h3>Villainess Component Library</h3>
+            <div className="tags-div">
+              <span className="tags">Vanilla CSS3</span>
+              <span className="tags">HTML5</span>
+              <span className="tags">10+ Components</span>
+            </div>
+            <div className="btn-flex">
+              <button className="button">View Source</button>
+              <button className="button-2">View Live</button>
+            </div>
+          </div>
+        </div>
+        <div className="flex-project">
+          <img src={ecom} alt="" />
+          <div className="flex-display">
+            <h3>Villainess E-Commerce</h3>
+            <div className="tags-div">
+              <span className="tags">V/N CL</span>
+              <span className="tags">ReactJS</span>
+              <span className="tags">React Context API + useReducer</span>
+            </div>
+            <div className="btn-flex">
+              <button className="button">View Source</button>
+              <button className="button-2">View Live</button>
+            </div>
+          </div>
+        </div>
+        <div className="flex-project">
+          <img src={vid} alt="" />
+          <div className="flex-display">
+            <h3>Flasher Video Library</h3>
+            <div className="tags-div">
+              <span className="tags">V/N CL</span>
+              <span className="tags">ReactJS</span>
+              <span className="tags">React Context API + useReducer</span>
+            </div>
+            <div className="btn-flex">
+              <button className="button">View Source</button>
+              <button className="button-2">View Live</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button className="button" style={{ marginTop: "3rem" }}>
+        View All
+      </button>
     </div>
   );
 };

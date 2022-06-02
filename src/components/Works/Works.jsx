@@ -1,13 +1,9 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import react from "../../img/react.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -20,19 +16,14 @@ const Works = () => {
       <div className="w-left">
         <div className="awesome">
           {/* dark Mode */}
-          <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
-          </span>
-          <span>Brands & Clients</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Tech Stack</span>
+          <span>& Skills</span>
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+            FrontEnd: ReactJS, JavaScript, HTML5, CSS3, Redux, Typescript,
+            Testing, Tailwind
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
             <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
+            BackEnd: NodsJS
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
@@ -54,19 +45,22 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img
+              src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
+              alt=""
+            />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={react} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src="https://cms-assets.tutsplus.com/uploads/users/1795/posts/30350/preview_image/ReduxLogo.jpg" alt="" />
           </div>
         </motion.div>
         {/* background Circles */}
