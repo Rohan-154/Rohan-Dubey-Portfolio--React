@@ -1,13 +1,10 @@
 import React, { useContext } from "react";
 import "./Portfolio.css";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import CL from "../../img/CL.png";
 import ecom from "../../img/ecom.png";
 import vid from "../../img/vid.png";
-import pomodoro from "../../img/pomodoro.png";
 import { themeContext } from "../../Context";
-import { Link } from "react-router-dom";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
