@@ -9,6 +9,9 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
 import { themeContext } from "./Context";
+import { Route, Routes } from "react-router-dom";
+import Projects from "./components/Projects/project";
+import Home from "./components/Home/home";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -21,12 +24,10 @@ function App() {
       }}
     >
       <Navbar />
-      <Intro />
-      <Experience />
-      <Works />
-      <Portfolio />
-      <Testimonial />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
       <Footer />
     </div>
   );

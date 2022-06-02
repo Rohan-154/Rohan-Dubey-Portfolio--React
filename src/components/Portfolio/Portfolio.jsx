@@ -7,6 +7,7 @@ import ecom from "../../img/ecom.png";
 import vid from "../../img/vid.png";
 import pomodoro from "../../img/pomodoro.png";
 import { themeContext } from "../../Context";
+import { Link } from "react-router-dom";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -64,9 +65,11 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <button className="button" style={{ marginTop: "3rem" }}>
-        View All
-      </button>
+      <a href="https://github.com/Rohan-154?tab=repositories">
+        <button className="button" style={{ marginTop: "3rem" }}>
+          View All
+        </button>
+      </a>
     </div>
   );
 };

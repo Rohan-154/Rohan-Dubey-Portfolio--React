@@ -30,13 +30,13 @@ const Intro = () => {
         </a>
         {/* social icons */}
         <div className="i-icons">
-          <a href="">
+          <a href="https://github.com/Rohan-154">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="">
+          <a href="https://twitter.com/Rohan_415">
             <i class="fa-brands fa-twitter"></i>
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/rohan-dubey-2854b9201">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
