@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import "./Portfolio.css";
-import "swiper/css";
 import CL from "../../img/CL.png";
 import ecom from "../../img/ecom.png";
 import vid from "../../img/vid.png";

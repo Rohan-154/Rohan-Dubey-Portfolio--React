@@ -6,7 +6,9 @@
   color: black;
   justify-content: space-around;
   align-items: center;
-
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
 }
 
 .footer-basic strong {

@@ -35,7 +35,7 @@ const Experience = () => {
         >
           ∞
         </div>
-        <span style={{ color: darkMode ? "white" : "" }}>Sarcasm</span>
+        <span style={{ color: darkMode ? "white" : "" }}>Bug Solving Hours</span>
         <span>Experience</span>
       </div>
     </div>

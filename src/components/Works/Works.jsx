@@ -23,7 +23,7 @@ const Works = () => {
             Testing, Tailwind
             <br />
             <br />
-            BackEnd: NodsJS
+            BackEnd: NodeJS
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>

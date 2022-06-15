@@ -91,9 +91,11 @@
     .t-wrapper {
         padding: 0;
     }
-
+    .testimonial{
+        height: 18rem;
+    }
     .testimonial>img {
-        width: 70px;
-        height: 70px;
+        width: 300px;
+        height: 150px;
     }
 }

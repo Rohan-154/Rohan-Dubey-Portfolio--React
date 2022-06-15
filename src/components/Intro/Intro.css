@@ -104,12 +104,12 @@
   .Intro {
     flex-direction: column;
     gap: 7rem;
-    height: 64rem;
+    height: 35rem;
+    padding: 1rem;
   }
 
   .i-right {
-    transform: scale(0.8);
-    left: -3rem;
+   display: none;
   }
 
   .i-right .blur {
@@ -120,5 +120,15 @@
     /* display: none; */
     top: -7rem !important;
     ;
+  }
+  .i-name> :nth-child(1) {
+    font-size: 2.5rem;
+  }
+  
+  .i-name> :nth-child(2) {
+    font-size: 2.5rem;
+  }
+  .i-icons>a>i {
+    font-size: 2.5rem;
   }
 }

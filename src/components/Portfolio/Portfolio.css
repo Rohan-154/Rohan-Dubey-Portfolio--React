@@ -44,6 +44,7 @@
   background-color: lightgray;
   padding: 0.6rem 0.3rem;
   border-radius: 0.8rem;
+  color: black;
 }
 .tags-div{
   line-height: 0.7rem;
@@ -62,3 +63,16 @@
   flex-direction: column;
 }
 
+@media screen and (max-width: 480px) {
+  .projects{
+    font-size:  2rem;
+  }
+    /* .sample-project{
+      overflow: scroll; width: 500px; min-height: 70rem;
+      gap: 2rem;
+    }
+    .flex-project{
+      width: 10000px;
+      margin-left: 3rem;
+    } */
+}

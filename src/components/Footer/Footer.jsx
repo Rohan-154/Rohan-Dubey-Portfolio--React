@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { themeContext } from "../../Context";
 import "./Footer.css";
 const Footer = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div class="footer-basic">
-      <p class="signature">
+    <div class="footer-basic" style={{ backgroundColor: darkMode ? "#23232e" : "" }}>
+      <p class="signature" style={{ color: darkMode ? "white" : "" }}>
         Built with <strong>ReactJS</strong> and <strong> Vanilla CSS</strong>
       </p>
       <div class="social">
